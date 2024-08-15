@@ -1,4 +1,84 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.footer {
+  background: $primary-color;
+  padding: 48px 0;
+  color: white;
+
+  a {
+      color: white;
+      &:hover {
+          color: $primary-color-light;
+      }
+  }
+
+  &-content {
+      justify-content: space-between;
+  }
+
+  .nav {
+      padding: 16px 0;
+      margin-bottom: 38.98px;
+      @include pad {
+          padding: 8px 0;
+      }
+      &-list {
+          gap: 48px;
+      }
+      @include pad-sm {
+          display: none;
+      }
+  }
+  &-contact {
+      flex-direction: column;
+      gap: 8px;
+      @include mobile {
+          font-size: 16px;
+          padding-bottom: 8px;
+      }
+      span {
+          margin-right: 20px;
+          @include mobile {
+              font-size: 24px;
+              margin-right: 10px;
+          }
+      }
+  }
+  .social-link {
+      gap: 32px;
+      @include pad-sm() {
+          gap: 8px;
+      }
+  }
+  .social-icon {
+      height: 48px;
+      @include pad {
+          width: 40px;
+          height: 40px;
+          object-fit: contain;
+      }
+      @include mobile {
+          width: 24px;
+          height: 24px;
+      }
+  }
+  &-hr {
+      margin: 32px 0;
+      @include mobile {
+          margin: 16px 0;
+      }
+  }
+
+  .copyright {
+      justify-content: space-between;
+      @include mobile {
+          flex-direction: column;
+          gap: 8px;
+      }
+  }
+  .privacy {
+      gap: 48px;
+      @include mobile {
+          flex-direction: column;
+          gap: 8px;
+      }
+  }
 }

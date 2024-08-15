@@ -1,0 +1,27 @@
+/* _components */
+
+.btn {
+    background: $primary-color;
+    color: white;
+    &:hover {
+        background: $primary-color-dark;
+        color: $primary-color-light;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+    }
+}
+
+.btn-primary {
+    padding: 6px 12px;
+}
+
+.btn-secondary {
+    padding: 16px;
+    width: 416px;
+    @include pad {
+        width: 336px;
+    }
+    @include mobile {
+        width: 100%;
+    }
+}

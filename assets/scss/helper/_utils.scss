@@ -1,0 +1,86 @@
+/* _utils 字級、排版工具 等 */
+
+.primary-color {
+    color: $primary-color;
+}
+.primary-color-dark {
+    color: $primary-color-dark;
+}
+
+.font-en {
+    font-family: $font-family-en;
+}
+
+.h1 {
+    font-size: 72px;
+}
+
+.h2 {
+    font-size: 64px;
+}
+
+.h3 {
+    font-size: 48px;
+}
+
+.fs-1 {
+    font-size: 36px;
+}
+
+.fs-2 {
+    font-size: 24px;
+}
+
+.fs-3 {
+    font-size: 20px;
+}
+
+.fs-4 {
+    font-size: 14px;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-black {
+    font-weight: 900;
+}
+
+.font-italy {
+    font-style: italic;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-block {
+    display: block;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-right: 12px;
+    padding-left: 12px;
+
+    @include pad {
+        max-width: 720px;
+    }
+    @include mobile {
+        max-width: 372px;
+    }
+
+    /* 這個是給 header 用的 container */
+    &-sm-full {
+        max-width: 1320px;
+        margin: 0 auto;
+        padding-right: 12px;
+        padding-left: 12px;
+
+        @include pad-sm {
+            padding: 0;
+        }
+    }
+}
