@@ -1,0 +1,83 @@
+.store {
+    margin-top: 96px;
+    margin-bottom: 80px;
+    @include pad {
+        margin: 80px 0;
+    }
+    @include mobile {
+        margin: 40px 0;
+    }
+    &-title {
+        margin-bottom: 33px;
+        padding-left: 16px;
+        border-left: 8px solid $primary-color;
+        @include mobile {
+            font-size: 24px;
+        }
+    }
+
+    &-search {
+        // width: calc(100% / 3);
+        gap: 16px;
+        margin-bottom: 40px;
+        @include pad {
+            gap: 8px;
+            margin: 24px 0;
+        }
+        &-label {
+            @include mobile {
+                font-size: 16px;
+            }
+        }
+
+        &-select {
+            padding: 6px 12px;
+            min-width: 276px;
+            font-size: 18px;
+            color: #495057;
+            border: 1px solid #CED4DA;
+            &:focus {
+                outline: 1px solid $primary-color;
+                box-shadow: #aa070127;
+            }
+        }
+    }
+
+    &-list {
+        flex-wrap: wrap;
+    }
+    &-card {
+        padding-bottom: 48px;
+        @include mobile {
+            padding-bottom: 24px;
+        }
+
+        &-title {
+            padding: 8px 24px;
+            border: 1px solid #00000020;
+        }
+        &-info {
+            padding: 16px 24px;
+            border: 1px solid #00000020;
+            a {
+                color: $dark-color;
+            }
+            span {
+                font-size: 24px;
+                margin-right: 8px;
+            }
+            .info-pb {
+                padding-bottom: 8px;
+            }
+        }
+    }
+    &-btn {
+        width: 100%;
+        padding: 16px 0;
+        background: $dark-color;
+        color: white;
+        text-align: center;
+        font-size: 19px;
+    }
+
+}
