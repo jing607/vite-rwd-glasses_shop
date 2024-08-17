@@ -3,6 +3,7 @@
 .primary-color {
     color: $primary-color;
 }
+
 .primary-color-dark {
     color: $primary-color-dark;
 }
@@ -23,20 +24,32 @@
     font-size: 48px;
 }
 
+.h4 {
+    font-size: 42px;
+}
+
 .fs-1 {
     font-size: 36px;
 }
 
 .fs-2 {
-    font-size: 24px;
+    font-size: 32px;
 }
 
 .fs-3 {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .fs-4 {
+    font-size: 20px;
+}
+
+.fs-5 {
     font-size: 14px;
+}
+
+.font-medium {
+    font-weight: 500;
 }
 
 .font-bold {
@@ -55,32 +68,23 @@
     display: flex;
 }
 
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
 .d-block {
     display: block;
 }
 
-.container {
-    max-width: 1320px;
-    margin: 0 auto;
-    padding-right: 12px;
-    padding-left: 12px;
+.w-50 {
+    width: 50%;
+}
 
-    @include pad {
-        max-width: 720px;
-    }
-    @include mobile {
-        max-width: 372px;
-    }
-
-    /* 這個是給 header 用的 container */
-    &-sm-full {
-        max-width: 1320px;
-        margin: 0 auto;
-        padding-right: 12px;
-        padding-left: 12px;
-
-        @include pad-sm {
-            padding: 0;
-        }
-    }
+.container-fluid {
+    max-width: 100%;
+    padding: 0;
 }

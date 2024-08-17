@@ -1,6 +1,7 @@
 .header {
   background: $primary-color;
   padding: 12px 0;
+
   @include pad-sm {
       padding-bottom: 0;
   }
@@ -30,6 +31,7 @@
           font-size: 16px;
           padding-top: 15px;
       }
+
       &-list {
           gap: 64px;
   
@@ -45,6 +47,10 @@
 
       &-item {
           width: 80px;
+          border-bottom: 3px solid transparent;
+          &:hover {
+            border-bottom: 3px solid $primary-color-light;
+          }
           
           @include pad-sm {
               width: 50%;
