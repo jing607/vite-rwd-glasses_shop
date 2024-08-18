@@ -17,7 +17,6 @@
     }
 
     &-search {
-        // width: calc(100% / 3);
         gap: 16px;
         margin-bottom: 40px;
         @include pad {
@@ -61,6 +60,9 @@
             border: 1px solid #00000020;
             a {
                 color: $dark-color;
+                &:hover {
+                    text-decoration: underline 1px $primary-color-dark;
+                }
             }
             span {
                 font-size: 24px;
@@ -78,6 +80,9 @@
         color: white;
         text-align: center;
         font-size: 19px;
+        &:hover {
+            background: $primary-color;
+        }
     }
 
 }
