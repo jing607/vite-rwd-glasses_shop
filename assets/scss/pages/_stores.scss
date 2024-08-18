@@ -19,7 +19,8 @@
     &-search {
         gap: 16px;
         margin-bottom: 40px;
-        @include pad {
+        align-items: center;
+        @include mobile {
             gap: 8px;
             margin: 24px 0;
         }
@@ -50,7 +51,11 @@
         @include mobile {
             padding-bottom: 24px;
         }
-
+        &-img {
+            height: 224px;
+            // width: 100%;
+            object-fit: cover;
+        }
         &-title {
             padding: 8px 24px;
             border: 1px solid #00000020;
@@ -83,6 +88,19 @@
         &:hover {
             background: $primary-color;
         }
+    }
+
+    /* store detail page */
+
+    &-detail-card {
+        padding-bottom: 0;
+        @include pad {
+            padding-bottom: 24px;
+        }
+    }    
+    &-map {
+        height: 100%;
+        object-fit: cover;
     }
 
 }

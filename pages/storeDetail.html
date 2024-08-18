@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>index</title>
+    </head>
+    <body>
+        <%- include('./layout/header'); -%>
+
+        <main class="store">
+            <div class="container">
+                <h1 class="store-title h3 font-bold">門市據點</h1>
+
+                <div class="store-search fs-3 d-flex">
+                    <label for="area" class="store-search-label">選擇地區</label>
+                    <select name="area" id="area" class="store-search-select">
+                        <option value="台北市" selected>台北中山旗艦店</option>
+                        <option value="台中市">台中市</option>
+                        <option value="高雄市">高雄市</option>
+                    </select>
+                
+                </div>
+
+                <div class="row d-flex">
+                    <div class="store-card store-detail-card col-5 col-md-12">
+                        <div class="row">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-1.png?raw=true" alt="store-1" class="store-card-img col-12 col-md-6 col-sm-12">
+                            <div class="store-card-body col-12 col-md-6 col-sm-12">
+                                <h2 class="store-card-title fs-3">台北中山旗艦店</h2>
+                                <ul class="store-card-info fs-4">
+                                    <li class="info-pb d-flex">
+                                        <span class="material-symbols-outlined"> call </span>
+                                        <a href="tel:+886 000-1234">電話：(02)000-1234</a></li>
+                                    <li class="info-pb d-flex">
+                                        <span class="material-symbols-outlined"> schedule </span>
+                                        <a href="#">營業時間：10:00-21:00</a></li>
+                                    <li class="d-flex">
+                                        <span class="material-symbols-outlined"> location_on </span>
+                                        <a href="#">地址：台北市中山區南京東路25巷2-1號</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-7 col-md-12 col-sm-12">
+                        <picture>
+                            <source 
+                                media="(max-width: 576px)"
+                                srcset="/assets/images/store_map_sm.png"/>
+                                <img src="/assets/images/store_map.png" alt="store-map" class="store-map">
+                        </picture>
+                        
+                    </div>
+
+
+                </div>
+            </div>
+            
+        </main>
+
+        <%- include('./layout/footer'); -%>
+
+        <script type="module" src="../main.js"></script>
+        </body>
+</html>
