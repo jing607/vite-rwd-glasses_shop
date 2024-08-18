@@ -138,6 +138,7 @@
     }
 
     &-list {
+        cursor: pointer;
         @include pad {
             gap: 24px;
             flex-wrap: wrap;
