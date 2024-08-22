@@ -1,15 +1,16 @@
 .store {
-    margin-top: 96px;
-    margin-bottom: 80px;
-    @include pad {
-        margin: 80px 0;
-    }
-    @include mobile {
-        margin: 40px 0;
-    }
+    // margin-top: 96px;
+    // margin-bottom: 80px;
+    // @include pad {
+    //     margin-top: 80px;
+    // }
+    // @include mobile {
+    //     margin-top: 40px;
+    //     margin-bottom: 40px;
+    // }
     &-title {
-        margin-bottom: 33px;
-        padding-left: 16px;
+        // margin-bottom: 32px;
+        // padding-left: 16px;
         border-left: 8px solid $primary-color;
         @include mobile {
             font-size: 24px;
@@ -17,13 +18,13 @@
     }
 
     &-search {
-        gap: 16px;
-        margin-bottom: 40px;
-        align-items: center;
-        @include mobile {
-            gap: 8px;
-            margin: 24px 0;
-        }
+        // gap: 16px;
+        // margin-bottom: 40px;
+        // align-items: center;
+        // @include mobile {
+        //     gap: 8px;
+        //     margin: 24px 0;
+        // }
         &-label {
             @include mobile {
                 font-size: 16px;
@@ -43,25 +44,25 @@
         }
     }
 
-    &-list {
-        flex-wrap: wrap;
-    }
+    // &-list {
+    //     flex-wrap: wrap;
+    // }
     &-card {
-        padding-bottom: 48px;
-        @include mobile {
-            padding-bottom: 24px;
-        }
+        // padding-bottom: 48px;
+        // @include mobile {
+        //     padding-bottom: 24px;
+        // }
         &-img {
             height: 224px;
             // width: 100%;
             object-fit: cover;
         }
         &-title {
-            padding: 8px 24px;
+            // padding: 8px 24px;
             border: 1px solid #00000020;
         }
         &-info {
-            padding: 16px 24px;
+            // padding: 16px 24px;
             border: 1px solid #00000020;
             a {
                 color: $dark-color;
@@ -71,11 +72,11 @@
             }
             span {
                 font-size: 24px;
-                margin-right: 8px;
+                // margin-right: 8px;
             }
-            .info-pb {
-                padding-bottom: 8px;
-            }
+            // .info-pb {
+            //     padding-bottom: 8px;
+            // }
         }
     }
     &-btn {
@@ -92,12 +93,12 @@
 
     /* store detail page */
 
-    &-detail-card {
-        padding-bottom: 0;
-        @include pad {
-            padding-bottom: 24px;
-        }
-    }    
+    // &-detail-card {
+    //     padding-bottom: 0;
+    //     @include pad {
+    //         padding-bottom: 24px;
+    //     }
+    // }    
     &-map {
         height: 100%;
         object-fit: cover;

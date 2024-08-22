@@ -1,5 +1,6 @@
 $gap :  24px;
 $columns-num: 12;
+$max: 24;
 
 
 .container {
@@ -73,6 +74,247 @@ $columns-num: 12;
             width: 100% * ($i / $columns-num);
             padding-left: $gap / 2;
             padding-right: $gap / 2;
+        }
+    }
+}
+
+/* spacing 設定： p, px, py, pb, ps, my, mb, mt, me, gap */
+// px
+@for $i from 0 through $max {
+    .p-#{$i} {
+        padding: $i * 4px;
+    }
+}
+
+@include pad {
+    @for $i from 0 through $max {
+        .p-md-#{$i} {
+            padding: $i * 4px;
+        }
+    }
+}
+
+@include mobile {
+    @for $i from 0 through $max {
+        .p-sm-#{$i} {
+            padding: $i * 4px;
+        }
+    }
+}
+
+// px
+@for $i from 0 through $max {
+    .px-#{$i} {
+        padding-left: $i * 4px;
+        padding-right: $i * 4px;
+    }
+}
+
+@include pad {
+    @for $i from 0 through $max {
+        .px-md-#{$i} {
+            padding-left: $i * 4px;
+            padding-right: $i * 4px;
+        }
+    }
+}
+
+@include mobile {
+    @for $i from 0 through $max {
+        .px-sm-#{$i} {
+            padding-left: $i * 4px;
+            padding-right: $i * 4px;
+        }
+    }
+}
+
+//  py
+@for $i from 0 through $max {
+    .py-#{$i} {
+        padding-top: $i * 4px;
+        padding-bottom: $i * 4px;
+    }
+}
+
+@include pad {
+    @for $i from 0 through $max {
+        .py-md-#{$i} {
+            padding-top: $i * 4px;
+            padding-bottom: $i * 4px;
+        }
+    }
+}
+
+@include mobile {
+    @for $i from 0 through $max {
+        .py-sm-#{$i} {
+            padding-top: $i * 4px;
+            padding-bottom: $i * 4px;
+        }
+    }
+}
+
+// pb
+@for $i from 0 through $max {
+    .pb-#{$i} {
+        padding-bottom: $i * 4px;
+    }
+}
+
+@include pad {
+    @for $i from 0 through $max {
+        .pb-md-#{$i} {
+            padding-bottom: $i * 4px;
+        }
+    }
+}
+
+@include mobile {
+    @for $i from 0 through $max {
+        .pb-sm-#{$i} {
+            padding-bottom: $i * 4px;
+        }
+    }
+}
+
+// ps
+@for $i from 0 through $max {
+    .ps-#{$i} {
+        padding-left: $i * 4px;
+    }
+}
+
+@include pad {
+    @for $i from 0 through $max {
+        .ps-md-#{$i} {
+            padding-left: $i * 4px;
+        }
+    }
+}
+
+@include mobile {
+    @for $i from 0 through $max {
+        .ps-sm-#{$i} {
+            padding-left: $i * 4px;
+        }
+    }
+}
+
+// my
+@for $i from 0 through $max {
+    .my-#{$i} {
+        margin-top: $i * 4px;
+        margin-bottom: $i * 4px;
+    }
+}
+
+@include pad {
+    @for $i from 0 through $max {
+        .my-md-#{$i} {
+            margin-top: $i * 4px;
+            margin-bottom: $i * 4px;
+        }
+    }
+}
+
+@include mobile {
+    @for $i from 0 through $max {
+        .my-sm-#{$i} {
+            margin-top: $i * 4px;
+            margin-bottom: $i * 4px;
+        }
+    }
+}
+
+// mb
+@for $i from 0 through $max {
+    .mb-#{$i} {
+        margin-bottom: $i * 4px;
+    }
+}
+
+@include pad {
+    @for $i from 0 through $max {
+        .mb-md-#{$i} {
+            margin-bottom: $i * 4px;
+        }
+    }
+}
+
+@include mobile {
+    @for $i from 0 through $max {
+        .mb-sm-#{$i} {
+            margin-bottom: $i * 4px;
+        }
+    }
+}
+
+// mt
+@for $i from 0 through $max {
+    .mt-#{$i} {
+        margin-top: $i * 4px;
+    }
+}
+
+@include pad {
+    @for $i from 0 through $max {
+        .mt-md-#{$i} {
+            margin-top: $i * 4px;
+        }
+    }
+}
+
+@include mobile {
+    @for $i from 0 through $max {
+        .mt-sm-#{$i} {
+            margin-top: $i * 4px;
+        }
+    }
+}
+
+// me
+@for $i from 0 through $max {
+    .me-#{$i} {
+        margin-right: $i * 4px;
+    }
+}
+
+@include pad {
+    @for $i from 0 through $max {
+        .me-md-#{$i} {
+            margin-right: $i * 4px;
+        }
+    }
+}
+
+@include pad {
+    @for $i from 0 through $max {
+        .me-sm-#{$i} {
+            margin-right: $i * 4px;
+        }
+    }
+}
+
+
+// gap
+@for $i from 0 through $max {
+    .gap-#{$i} {
+        gap: $i * 4px;
+    }
+}
+
+@include pad {
+    @for $i from 0 through $max {
+        .gap-md-#{$i} {
+            gap: $i * 4px;
+        }
+    }
+}
+
+@include pad {
+    @for $i from 0 through $max {
+        .gap-sm-#{$i} {
+            gap: $i * 4px;
         }
     }
 }

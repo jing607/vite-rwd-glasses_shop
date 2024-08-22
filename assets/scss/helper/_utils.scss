@@ -68,6 +68,10 @@
     display: flex;
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
 .justify-content-between {
     justify-content: space-between;
 }
@@ -91,4 +95,8 @@
 .container-fluid {
     max-width: 100%;
     padding: 0;
+}
+
+.text-center {
+    text-align: center;
 }
